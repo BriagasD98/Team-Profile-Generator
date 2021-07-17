@@ -1,10 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generatePage = require('./src/page-template.js');
+const formatName = require('./utils/names');
+const allEmployees = [];
 
 const questions = [
     {
-        type: 'input',
+        type: 'list',
         name: 'role',
         message: "What is the employee's role?",
         choices: // limits application to assign ONE manager
