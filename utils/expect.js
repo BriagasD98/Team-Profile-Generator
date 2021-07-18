@@ -10,4 +10,4 @@ const expectNum = obj => {
     expect(obj).toEqual(expect.any(Number));
 };
 
-module.exports = { expectToBe, expectStr, expectNum };
+module.exports = { expectToBe, expectStr, expectNum }

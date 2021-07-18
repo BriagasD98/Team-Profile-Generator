@@ -15,7 +15,7 @@ const addEmployee = employeeInfo => {
 
         switch (role) {
             case 'Manager':
-                newEmployee = new Manager(formatName(firstName), formateName(lastName), id, employee.officeNumber);
+                newEmployee = new Manager(formatName(firstName), formatName(lastName), id, employee.officeNumber);
                 extraInfo = newEmployee.getOfficeNumber();
                 break;
             case 'Engineer':
@@ -23,35 +23,27 @@ const addEmployee = employeeInfo => {
                 extraInfo = newEmployee.getGithub();
                 break;
             case 'Intern':
-                newEmployee = new Intern(formatName(firstName), formatName(lastname), id, employee.school);
+                newEmployee = new Intern(formatName(firstName), formatName(lastName), id, employee.school);
                 extraInfo = newEmployee.getSchool();
                 break;
             default:
                 newEmployee = new Employee(formatName(firstName), formatName(lastName), id);
         };
-        
+
       // concatenates all employee cards
       allCards += `
-      <div class="column is-one-quarter-desktop">
-          <div class="card">
-              <div class="card-content">
-                  <div class="media">
-                      <div class="media-left">
-                          ${newEmployee.getIcon()}
-                      </div>
-                      <div class="media-content">
-                          <p class="title is-4">${newEmployee.getName()}</p>
-                          <p class="subtitle is-6">${newEmployee.getRole()}</p>
-                      </div>
-                  </div>
-                  <div class="content">
-                      <p>${newEmployee.getId()}<br />
-                      ${newEmployee.getEmail()}<br />
-                      ${extraInfo}</p>
-                  </div>
-              </div>
-          </div>
-      </div>`  
+      <div class="card">
+        <div class="card-header">
+            ${newEmployee.getRole()}
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">${newEmployee.getName()}</h5>
+            <p class="card-text">${newEmployee.getId()}<br />
+            ${newEmployee.getEmail()}<br />
+            ${extraInfo}</p>
+        </div>
+      </div>
+      `  
     });
     return allCards;
 };
@@ -67,22 +59,27 @@ const generatePage = templateData => {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>My Team</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         </head>
         <body>
-            <section class="hero is-primary is-bold">
-                <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title">My Team</h1>
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 jumbotron mb-3 team-heading">
+                    <h1 class="text-center">My Team</h1>
                 </div>
-            </section>
-            <main class="m-6">
-                <div class="columns is-flex is-flex-wrap-wrap is-flex-direction-row is justify-content-center">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="team-area col-12 d-flex justify-content-center">
                     ${addEmployee(templateData)}
                 </div>
-            </main>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         </body>
     </html>
     `;
