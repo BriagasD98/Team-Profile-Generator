@@ -1,4 +1,3 @@
-const { test, expect } = require('@jest/globals');
 const Employee = require('../lib/Employee');
 const { expectToBe, expectStr, expectNum } = require('../utils/expect');
 
