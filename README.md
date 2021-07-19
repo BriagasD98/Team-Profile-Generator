@@ -6,19 +6,34 @@ of 3 types of roles: Manager, Engineer and Intern. A user can select an employee
 when prompted by a list of role selections. Once a role has been chosen, more question prompts about the employee will follow
 such as first name, last name, ID number, email, github, office number and school. Once all questions have been answered, a styled and ready webpage
 will be generated for the user made to their specifications.
-<br/>
 
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Tests](#Tests)
 * [Questions](#Questions)
-<br/>
 
 ## Installation
-
+To use the application, you must first clone the github repo to your local machine. You will then need to install the node dependencies by running
+the following commands in your terminal:
+```
+npm install
+```
+```
+npm i inquirer
+```
+Once you have installed the necessary dependencies, the application is ready to be used!
 ## Usage
+To use the application, go to your terminal and enter the following command:
+```
+node index.js
+```
+Once entered, you'll be prompted with a series of questions to answer about your team.
 
 ## Tests
+To run tests on the application to ensure there are no potential bugs, enter the following command in your terminal:
+```
+npm run test
+```
 
 ## Questions
