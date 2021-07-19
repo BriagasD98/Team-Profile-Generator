@@ -32,9 +32,9 @@ const addEmployee = employeeInfo => {
 
       // concatenates all employee cards
       allCards += `
-      <div class="card">
-        <div class="card-header">
-            ${newEmployee.getRole()}
+      <div class="card shadow">
+        <div class="card-header h3 text-white bg-info">
+            ${newEmployee.getRole()} ${newEmployee.getIcon()}
         </div>
         <div class="card-body">
             <h5 class="card-title">${newEmployee.getName()}</h5>
@@ -65,14 +65,14 @@ const generatePage = templateData => {
         <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 jumbotron mb-3 team-heading">
-                    <h1 class="text-center">My Team</h1>
+                <div class="col-12 jumbotron mb-3 team-heading bg-primary">
+                    <h1 class="text-center text-white">My Team</h1>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="team-area col-12 d-flex justify-content-center">
+                <div class="card-deck col-12 d-flex justify-content-center">
                     ${addEmployee(templateData)}
                 </div>
             </div>
