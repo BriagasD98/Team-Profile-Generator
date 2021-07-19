@@ -43,6 +43,6 @@ in the questions section to discuss how we may collaborate!
 ## Questions
 For any questions regarding this project, please reach out to me via email or Github:
 <br/>
-briagasdavid@yahoo.com
+[briagasdavid@yahoo.com](mailto:briagasdavid@yahoo.com)
 <br/>
 https://github.com/BriagasD98
