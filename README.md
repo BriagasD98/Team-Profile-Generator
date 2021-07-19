@@ -6,14 +6,19 @@ of 3 types of roles: Manager, Engineer and Intern. A user can select an employee
 when prompted by a list of role selections. Once a role has been chosen, more question prompts about the employee will follow
 such as first name, last name, ID number, email, github, office number and school. Once all questions have been answered, a styled and ready webpage
 will be generated for the user made to their specifications.
+<br/>
 
 ## Table of Contents
-- [Installation](#Installation)
-- Usage
-- Tests
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Tests](#Tests)
+* [Questions](#Questions)
+<br/>
 
 ## Installation
 
 ## Usage
 
 ## Tests
+
+## Questions
