@@ -30,12 +30,16 @@ To use the application, go to your terminal and enter the following command:
 node index.js
 ```
 Once entered, you'll be prompted with a series of questions to answer about your team.
+![Screenshot (44)](https://user-images.githubusercontent.com/83102464/126095426-2ffeb144-1854-4cab-a23c-fe1afbb452d2.png)
+![Screenshot (43)](https://user-images.githubusercontent.com/83102464/126095451-bbdaa519-a89d-40c1-8f58-d8f9029f5cd8.png)
 
 ## Tests
 To run tests on the application to ensure there are no potential bugs, enter the following command in your terminal:
 ```
 npm run test
 ```
+![Screenshot (41)](https://user-images.githubusercontent.com/83102464/126095405-cea054a7-ead5-4281-b1f0-321c89317130.png)
+
 ## Contributions
 If you would like to contribute to this project, please reach out to me via email or Github found
 in the questions section to discuss how we may collaborate!
