@@ -30,6 +30,8 @@ To use the application, go to your terminal and enter the following command:
 node index.js
 ```
 Once entered, you'll be prompted with a series of questions to answer about your team.
+Follow this link for a walkthrough video on how to install and use the application:
+https://drive.google.com/file/d/1g5wspdHsRD_CwbK-zlNcCWA3l9rbueGZ/view
 ![Screenshot (44)](https://user-images.githubusercontent.com/83102464/126095426-2ffeb144-1854-4cab-a23c-fe1afbb452d2.png)
 ![Screenshot (43)](https://user-images.githubusercontent.com/83102464/126095451-bbdaa519-a89d-40c1-8f58-d8f9029f5cd8.png)
 
