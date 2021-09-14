@@ -1,4 +1,5 @@
 # Team-Profile-Generator
+**View a generated HTML sample here! :** https://briagasd98.github.io/Team-Profile-Generator/
 ## Description
 The Team Profile Generator is an application used to generate a web page of a user's team and team member details. The application
 is run through the command line by prompting the user with a series of questions for them to answer about their team. The team consists
